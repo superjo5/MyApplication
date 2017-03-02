@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
@@ -42,6 +43,18 @@ public class MainActivity extends AppCompatActivity {
         //Create ListView
         MyAdapter myAdapter = new MyAdapter(MainActivity.this,ints ,titleStrings,shortString);
         listView.setAdapter(myAdapter);
+
+        //Active when click List View
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {//เมื่อมีการคลิ๊กข้อมูลที่ตำแหน่งใด จะเก็บข้อมูลจากการคลิก
+                Intent intent = new Intent(MainActivity.this, Detail.class);
+                intent.putExtra("Title", titleStrings[position]);
+                intent.putExtra("Detail", detailStrings[position]);
+                intent.putExtra("Image", ints[position]);
+                startActivity(intent);
+            }
+        });
 
     }   //Main Method onCreate
 
