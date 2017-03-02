@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.traffic_16, R.drawable.traffic_17, R.drawable.traffic_18, R.drawable.traffic_19,
             R.drawable.traffic_20};
 
-    private String[] titleStrings, detailStrings;
+    private String[] titleStrings, detailStrings, shortString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +32,15 @@ public class MainActivity extends AppCompatActivity {
         titleStrings = getResources().getStringArray(R.array.title);
         detailStrings = getResources().getStringArray(R.array.detail);
 
+        //SubString detailString ตัดคำใน detail string เพื่อไม่ให้เกิน 30 Character
+        shortString = new String[detailStrings.length]; //จองพื้นที่ในหน่วยความจำตัวแปร shortString
+        for (int i=0; i < detailStrings.length; i++) {
+            shortString[i] = detailStrings[i].substring(0, 29) + "...";
+
+        } //end for
+
         //Create ListView
-        MyAdapter myAdapter = new MyAdapter(MainActivity.this,ints ,titleStrings,detailStrings);
+        MyAdapter myAdapter = new MyAdapter(MainActivity.this,ints ,titleStrings,shortString);
         listView.setAdapter(myAdapter);
 
     }   //Main Method onCreate
