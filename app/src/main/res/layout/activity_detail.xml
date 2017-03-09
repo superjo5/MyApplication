@@ -58,13 +58,12 @@
     </ScrollView>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="clickBack"
         android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_centerInParent="true"
-        tools:text="Back"
-        android:text="Button" />
+        android:onClick="clickBack"
+        android:text="ย้อนกลับ" />
 </RelativeLayout>
