@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg11">
+
+    <TextView
+        android:id="@+id/txtMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/my_margin"
+        android:text="@string/aboutMe"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/h1" />
+
+    <ImageView
+        android:id="@+id/imageMe"
+        android:layout_width="@dimen/my_picture"
+        android:layout_height="@dimen/my_picture"
+        android:layout_below="@+id/txtMe"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/my_margin"
+        app:srcCompat="@drawable/m" />
+
+    <ScrollView
+        android:id="@+id/m"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button"
+        android:layout_below="@+id/imageMe"
+        android:layout_margin="@dimen/my_margin"
+        android:background="#51969bf2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nameme"
+                android:textAlignment="center"
+                android:textSize="@dimen/h2" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClickFace"
+                android:text="@string/Facebook"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/my_margin"
+        android:onClick="clickBack"
+        android:text="Back" />
+
+</RelativeLayout>

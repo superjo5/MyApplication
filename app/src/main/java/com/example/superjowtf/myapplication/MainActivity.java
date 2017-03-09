@@ -63,4 +63,9 @@ public class MainActivity extends AppCompatActivity {
         intent.setData(Uri.parse("https://www.dlt.go.th/th/"));
         startActivity(intent);
     }//Main Method onClickMoreInfo
+
+    public void onClickAboutme (View view){
+        Intent intent = new Intent(MainActivity.this, Aboutme.class);
+        startActivity(intent);
+    }
 }   //Main Class

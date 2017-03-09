@@ -4,4 +4,9 @@
     <string name="txtTitle">ป้ายจราจร</string>
     <string name="moreInfo">More Info</string>
     <string name="aboutMe">About Me</string>
+    <string name="nameme">ชิ่อ นาย วิรัฐพงศ์ เกษมเรือสกุล \n
+    รหัสนักศึกษา 5711020660016 \n
+    หลักสูตร วิทยาการคอมพิวเตอร์ \n
+    </string>
+    <string name="Facebook">Facebook JoWirattapong Kasemrueangsakul</string>
 </resources>
