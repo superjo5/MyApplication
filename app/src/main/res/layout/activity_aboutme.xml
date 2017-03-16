@@ -42,7 +42,7 @@
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/nameme"
+                android:text="@string/name1"
                 android:textAlignment="center"
                 android:textSize="@dimen/h2" />
 
@@ -51,8 +51,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onClickFace"
-                android:text="@string/Facebook"
+                android:text="@string/name2"
                 android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name3" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Facebook" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name4" />
         </LinearLayout>
     </ScrollView>
 

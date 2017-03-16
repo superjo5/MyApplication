@@ -64,8 +64,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }//Main Method onClickMoreInfo
 
-    public void onClickAboutme (View view){
-        Intent intent = new Intent(MainActivity.this, Aboutme.class);
+    public void onClickAbout_me (View view){
+        Intent intent = new Intent(MainActivity.this, About_me.class);
         startActivity(intent);
     }
 }   //Main Class
